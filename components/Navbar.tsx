@@ -8,51 +8,50 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
+    { name: 'Work', href: '#projects' },
     { name: 'Services', href: '#services' },
-    { name: 'Projects', href: '#projects' },
+    { name: 'About', href: '#about' },
     { name: 'Process', href: '#process' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100'
+          ? 'bg-[#0D1B2A]/90 backdrop-blur-md border-b border-white/8'
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
           <a
-            href="#home"
-            className="text-xl md:text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
+            href="#"
+            className="text-2xl font-bold text-white hover:text-[#2F80FF] transition-colors"
           >
             Kevin
           </a>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-10">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="text-[#94A3B8] hover:text-white transition-colors font-medium text-sm tracking-wide"
               >
                 {link.name}
               </a>
             ))}
             <a
               href="#contact"
-              className="bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              className="bg-[#FF8A3D] text-white px-6 py-2.5 rounded-lg hover:bg-[#FF8A3D]/90 transition-colors font-medium text-sm"
             >
               Start a Project
             </a>
@@ -60,7 +59,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-gray-700"
+            className="md:hidden p-2 text-white"
             aria-label="Toggle menu"
           >
             <svg
@@ -83,13 +82,13 @@ export default function Navbar() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100">
-          <div className="px-4 py-4 space-y-3">
+        <div className="md:hidden bg-[#0D1B2A]/95 backdrop-blur-md border-t border-white/8">
+          <div className="px-6 py-6 space-y-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
+                className="block text-[#94A3B8] hover:text-white transition-colors font-medium text-lg py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
@@ -97,7 +96,7 @@ export default function Navbar() {
             ))}
             <a
               href="#contact"
-              className="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
+              className="block bg-[#FF8A3D] text-white px-6 py-3 rounded-lg hover:bg-[#FF8A3D]/90 transition-colors font-medium text-center mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Start a Project

@@ -2,33 +2,31 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
+    { name: 'Work', href: '#projects' },
     { name: 'Services', href: '#services' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Process', href: '#process' },
+    { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
-    <footer className="bg-gray-900 text-white py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-[#07111F] border-t border-white/8 py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid md:grid-cols-3 gap-12 items-start">
           <div>
-            <h3 className="text-xl font-bold mb-4">Kevin</h3>
-            <p className="text-gray-400 leading-relaxed">
+            <h3 className="text-2xl font-bold text-white mb-4">Kevin</h3>
+            <p className="text-[#94A3B8] leading-relaxed">
               Full-Stack Developer & Digital Solutions Provider
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Navigation</h4>
+            <h4 className="font-semibold text-white mb-4">Navigation</h4>
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-[#94A3B8] hover:text-white transition-colors"
                   >
                     {link.name}
                   </a>
@@ -38,13 +36,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
+            <h4 className="font-semibold text-white mb-4">Connect</h4>
             <div className="flex gap-4">
               <a
                 href="https://github.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-[#94A3B8] hover:text-white transition-colors"
                 aria-label="GitHub"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -55,7 +53,7 @@ export default function Footer() {
                 href="https://linkedin.com/in/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-[#94A3B8] hover:text-white transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -66,7 +64,7 @@ export default function Footer() {
                 href="https://wa.me/254700000000"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-[#94A3B8] hover:text-white transition-colors"
                 aria-label="WhatsApp"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -75,7 +73,7 @@ export default function Footer() {
               </a>
               <a
                 href="mailto:kipkoechkevin611@gmail.com"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-[#94A3B8] hover:text-white transition-colors"
                 aria-label="Email"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,9 +84,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © {currentYear} Kevin. All rights reserved.
+        <div className="border-t border-white/8 mt-12 pt-8 text-center">
+          <p className="text-[#94A3B8] text-sm">
+            Copyright {currentYear}. All rights reserved.
           </p>
         </div>
       </div>

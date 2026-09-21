@@ -1,22 +1,8 @@
 export default function Projects() {
   const projects = [
     {
-      name: 'Majesty Compucare',
-      description: 'Business technology and e-commerce website for a computer and technology solutions company.',
-      whatIBuilt: [
-        'Responsive frontend',
-        'Product catalogue',
-        'Ordering system',
-        'API integration',
-        'Admin functionality',
-        'Database integration',
-      ],
-      technology: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'MongoDB'],
-      url: 'https://www.majestycompucarelimited.com/?utm_source=chatgpt.com',
-    },
-    {
       name: 'TopTank Kenya',
-      description: 'E-commerce and business platform for water storage solutions with product catalogues and customer ordering workflows.',
+      description: 'E-commerce platform for water storage solutions.',
       whatIBuilt: [
         'Responsive frontend',
         'Product catalogue',
@@ -27,6 +13,20 @@ export default function Projects() {
       ],
       technology: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'MongoDB'],
       url: 'https://www.toptankkenya.co.ke/?utm_source=chatgpt.com',
+    },
+    {
+      name: 'Majesty Compucare',
+      description: 'Business technology and e-commerce website for computer and technology solutions.',
+      whatIBuilt: [
+        'Responsive frontend',
+        'Product catalogue',
+        'Ordering system',
+        'API integration',
+        'Admin functionality',
+        'Database integration',
+      ],
+      technology: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'MongoDB'],
+      url: 'https://www.majestycompucarelimited.com/?utm_source=chatgpt.com',
     },
     {
       name: 'Career Account Support',
@@ -45,94 +45,84 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 md:py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+    <section id="projects" className="py-24 md:py-32 bg-[#07111F]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Selected Work
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Real projects I've built for businesses and organizations
+          <p className="text-xl text-[#94A3B8] max-w-2xl">
+            Real products built to solve real business problems.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="space-y-32">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow"
+              className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${
+                index % 2 === 1 ? 'lg:grid-flow-dense' : ''
+              }`}
             >
-              <div className="p-8">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                <div className="bg-[#0D1B2A] rounded-2xl border border-white/8 p-8 aspect-video flex items-center justify-center hover:border-[#2F80FF]/30 transition-colors group">
+                  <div className="text-center">
+                    <div className="text-[#94A3B8] text-sm mb-2">{project.url.replace('https://', '').replace('/?utm_source=chatgpt.com', '')}</div>
+                    <div className="bg-white/5 rounded-lg p-6 max-w-md mx-auto">
+                      <div className="flex items-center gap-2 mb-4">
+                        <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="bg-white/10 rounded h-3 w-full"></div>
+                        <div className="bg-white/10 rounded h-3 w-3/4"></div>
+                        <div className="bg-white/10 rounded h-3 w-1/2"></div>
+                        <div className="bg-[#2F80FF]/20 rounded h-8 w-1/3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} space-y-6`}>
+                <div className="text-[#FF8A3D] text-sm font-medium tracking-widest uppercase">
+                  PROJECT 0{index + 1}
+                </div>
+                <h3 className="text-3xl md:text-4xl font-bold text-white">
                   {project.name}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-lg text-[#94A3B8] leading-relaxed">
                   {project.description}
                 </p>
 
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-3">
-                    What I Built
-                  </h4>
-                  <ul className="space-y-2">
-                    {project.whatIBuilt.map((item, i) => (
-                      <li key={i} className="flex items-start text-sm text-gray-600">
-                        <svg
-                          className="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M5 13l4 4L19 7"
-                          ></path>
-                        </svg>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="flex flex-wrap gap-2">
+                  {project.technology.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-white/5 border border-white/10 text-[#94A3B8] px-3 py-1.5 rounded-full text-sm font-medium hover:border-[#2F80FF]/30 hover:text-[#2F80FF] transition-colors"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
 
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-3">
-                    Technology
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technology.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="bg-white px-3 py-1 rounded-full text-xs font-medium text-gray-700 border border-gray-200"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm"
-                >
-                  View Project
-                  <svg
-                    className="w-4 h-4 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+                <div className="flex gap-4 pt-4">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#2F80FF] text-white px-6 py-3 rounded-lg hover:bg-[#2F80FF]/90 transition-colors font-medium flex items-center gap-2"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    ></path>
-                  </svg>
-                </a>
+                    View Live Project
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                  <button className="border border-white/20 text-white px-6 py-3 rounded-lg hover:border-[#2F80FF] hover:text-[#2F80FF] transition-colors font-medium">
+                    Case Study
+                  </button>
+                </div>
               </div>
             </div>
           ))}

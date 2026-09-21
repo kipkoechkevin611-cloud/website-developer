@@ -1,13 +1,12 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import HeroTransition from '@/components/HeroTransition';
 import About from '@/components/About';
 import Services from '@/components/Services';
 import Projects from '@/components/Projects';
 import Technology from '@/components/Technology';
-import WhyWorkWithMe from '@/components/WhyWorkWithMe';
 import Process from '@/components/Process';
 import ContactForm from '@/components/ContactForm';
-import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 export const metadata = {
@@ -32,14 +31,13 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <About />
-      <Services />
+      <HeroTransition />
       <Projects />
+      <Services />
       <Technology />
-      <WhyWorkWithMe />
+      <About />
       <Process />
       <ContactForm />
-      <Contact />
       <Footer />
     </main>
   );
