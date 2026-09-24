@@ -9,24 +9,24 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#07111F] border-t border-white/8 py-16">
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-10 items-start">
+    <footer className="bg-[#07111F] border-t border-white/8 py-12">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+        <div className="grid md:grid-cols-3 gap-8 items-start">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Kevin</h3>
-            <p className="text-[#94A3B8] leading-relaxed">
+            <h3 className="text-xl font-bold text-white mb-3">Kevin</h3>
+            <p className="text-[#94A3B8] leading-relaxed text-sm">
               Full-Stack Developer & Digital Solutions Provider
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Navigation</h4>
+            <h4 className="font-semibold text-white mb-3 text-sm">Navigation</h4>
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-[#94A3B8] hover:text-white transition-colors"
+                    className="text-[#94A3B8] hover:text-white transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -36,8 +36,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Connect</h4>
-            <div className="flex gap-4">
+            <h4 className="font-semibold text-white mb-3 text-sm">Connect</h4>
+            <div className="flex gap-3">
               <a
                 href="https://github.com/yourusername"
                 target="_blank"
@@ -84,8 +84,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/8 mt-10 pt-8 text-center">
-          <p className="text-[#94A3B8] text-sm">
+        <div className="border-t border-white/8 mt-8 pt-6 text-center">
+          <p className="text-[#94A3B8] text-xs">
             Copyright {currentYear}. All rights reserved.
           </p>
         </div>

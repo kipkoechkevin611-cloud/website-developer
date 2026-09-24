@@ -1,35 +1,35 @@
 export default function Hero() {
   return (
-    <section id="home" className="min-h-[85vh] lg:min-h-[90vh] flex items-center pt-20 bg-[#07111F]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-20 md:py-24">
-        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
-          <div className="space-y-8">
-            <div className="space-y-6">
-              <p className="text-[#94A3B8] text-sm font-medium tracking-widest uppercase">
-                Full-Stack Developer • Digital Solutions
+    <section id="home" className="min-h-[70vh] lg:min-h-[82vh] flex items-center pt-16 bg-[#07111F]">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 md:py-20">
+        <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-16 items-center">
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <p className="text-[#94A3B8] text-xs font-medium tracking-widest uppercase mb-4">
+                FULL-STACK DEVELOPER • DIGITAL SOLUTIONS
               </p>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-[clamp(48px,6vw,82px)] font-bold text-white leading-[1.05]">
                 I build digital products<br />
                 that mean business.
               </h1>
-              <p className="text-lg md:text-xl text-[#94A3B8] leading-relaxed max-w-xl">
+              <p className="text-base md:text-lg text-[#94A3B8] leading-[1.65] max-w-[520px]">
                 I design and develop fast, responsive websites, e-commerce platforms and custom web applications that help businesses operate, sell and grow online.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="#contact"
-                className="bg-[#FF8A3D] text-white px-8 py-4 rounded-lg hover:bg-[#FF8A3D]/90 transition-colors font-semibold text-center text-lg flex items-center justify-center gap-2"
+                className="bg-[#2F80FF] text-white px-6 py-3 rounded-lg hover:bg-[#2F80FF]/90 transition-all hover:translate-y-[-2px] font-medium text-base flex items-center justify-center gap-2"
               >
                 Start a Project
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                 </svg>
               </a>
               <a
                 href="#projects"
-                className="border border-white/20 text-white px-8 py-4 rounded-lg hover:border-[#2F80FF] hover:text-[#2F80FF] transition-colors font-semibold text-center text-lg"
+                className="border border-white/20 text-white px-6 py-3 rounded-lg hover:border-[#2F80FF] hover:text-[#2F80FF] transition-all hover:translate-y-[-2px] font-medium text-base"
               >
                 Explore My Work ↓
               </a>
@@ -41,9 +41,9 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative space-y-4">
-              <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-4 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+          <div className="relative hidden lg:block">
+            <div className="relative space-y-3">
+              <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-4 transform rotate-2 hover:rotate-0 hover:translate-y-[-4px] transition-all duration-500 shadow-2xl">
                 <div className="flex items-center gap-2 mb-3">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -60,7 +60,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-4 transform -rotate-3 hover:rotate-0 transition-transform duration-500 ml-8">
+              <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-4 transform -rotate-3 hover:rotate-0 hover:translate-y-[-4px] transition-all duration-500 ml-8 shadow-2xl">
                 <div className="flex items-center gap-2 mb-3">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -77,7 +77,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-4 transform rotate-1 hover:rotate-0 transition-transform duration-500 ml-4">
+              <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-4 transform rotate-1 hover:rotate-0 hover:translate-y-[-4px] transition-all duration-500 ml-4 shadow-2xl">
                 <div className="flex items-center gap-2 mb-3">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
