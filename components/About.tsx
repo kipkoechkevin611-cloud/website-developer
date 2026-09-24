@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <section id="about" className="py-24 md:py-32 bg-[#0D1B2A]">
-      <div className="max-w-4xl mx-auto px-6 lg:px-8">
+    <section id="about" className="py-20 md:py-28 bg-[#0D1B2A]">
+      <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white">
             I'm Kevin.<br />
@@ -18,21 +18,21 @@ export default function About() {
               From responsive interfaces to complex database architectures, payment integrations to API connections, I build complete digital solutions that businesses can rely on.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6">
             <div className="text-center">
-              <div className="text-[#2F80FF] text-2xl font-bold mb-1">Full-Stack</div>
+              <div className="text-[#2F80FF] text-2xl font-bold mb-2">Full-Stack</div>
               <div className="text-[#94A3B8] text-sm">Development</div>
             </div>
             <div className="text-center">
-              <div className="text-[#2F80FF] text-2xl font-bold mb-1">Responsive</div>
+              <div className="text-[#2F80FF] text-2xl font-bold mb-2">Responsive</div>
               <div className="text-[#94A3B8] text-sm">Interfaces</div>
             </div>
             <div className="text-center">
-              <div className="text-[#2F80FF] text-2xl font-bold mb-1">Databases</div>
+              <div className="text-[#2F80FF] text-2xl font-bold mb-2">Databases</div>
               <div className="text-[#94A3B8] text-sm">& APIs</div>
             </div>
             <div className="text-center">
-              <div className="text-[#2F80FF] text-2xl font-bold mb-1">E-Commerce</div>
+              <div className="text-[#2F80FF] text-2xl font-bold mb-2">E-Commerce</div>
               <div className="text-[#94A3B8] text-sm">& Integrations</div>
             </div>
           </div>

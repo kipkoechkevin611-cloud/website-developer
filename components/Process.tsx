@@ -28,28 +28,28 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="py-24 md:py-32 bg-[#07111F]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="mb-16">
+    <section id="process" className="py-20 md:py-28 bg-[#07111F]">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             How I work
           </h2>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-8 md:space-y-10">
           {steps.map((step, index) => (
             <div
               key={index}
               className="flex items-start gap-8 group"
             >
-              <div className="text-[#FF8A3D] text-6xl font-bold group-hover:text-[#2F80FF] transition-colors flex-shrink-0">
+              <div className="text-[#FF8A3D] text-5xl md:text-6xl font-bold group-hover:text-[#2F80FF] transition-colors flex-shrink-0">
                 {step.number}
               </div>
               <div className="flex-1 pt-2">
-                <h3 className="text-2xl font-bold text-white mb-2">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
                   {step.title}
                 </h3>
-                <p className="text-[#94A3B8]">
+                <p className="text-[#94A3B8] text-base md:text-lg">
                   {step.description}
                 </p>
               </div>

@@ -10,8 +10,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#07111F] border-t border-white/8 py-16">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-12 items-start">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-3 gap-10 items-start">
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">Kevin</h3>
             <p className="text-[#94A3B8] leading-relaxed">
@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/8 mt-12 pt-8 text-center">
+        <div className="border-t border-white/8 mt-10 pt-8 text-center">
           <p className="text-[#94A3B8] text-sm">
             Copyright {currentYear}. All rights reserved.
           </p>

@@ -46,17 +46,17 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-24 md:py-32 bg-[#07111F]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="mb-20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Selected Work
           </h2>
-          <p className="text-xl text-[#94A3B8] max-w-2xl">
+          <p className="text-lg md:text-xl text-[#94A3B8] max-w-2xl">
             Real products built to solve real business problems.
           </p>
         </div>
 
-        <div className="space-y-32">
+        <div className="space-y-24 md:space-y-32">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -65,9 +65,9 @@ export default function Projects() {
               }`}
             >
               <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <div className="bg-[#0D1B2A] rounded-2xl border border-white/8 p-8 aspect-video flex items-center justify-center hover:border-[#2F80FF]/30 transition-colors group">
+                <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-8 aspect-video flex items-center justify-center hover:border-[#2F80FF]/30 transition-colors group">
                   <div className="text-center">
-                    <div className="text-[#94A3B8] text-sm mb-2">{project.url.replace('https://', '').replace('/?utm_source=chatgpt.com', '')}</div>
+                    <div className="text-[#94A3B8] text-sm mb-3">{project.url.replace('https://', '').replace('/?utm_source=chatgpt.com', '')}</div>
                     <div className="bg-white/5 rounded-lg p-6 max-w-md mx-auto">
                       <div className="flex items-center gap-2 mb-4">
                         <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -85,7 +85,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} space-y-6`}>
+              <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} space-y-5`}>
                 <div className="text-[#FF8A3D] text-sm font-medium tracking-widest uppercase">
                   PROJECT 0{index + 1}
                 </div>
@@ -107,19 +107,19 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className="flex gap-4 pt-4">
+                <div className="flex gap-4 pt-3">
                   <a
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#2F80FF] text-white px-6 py-3 rounded-lg hover:bg-[#2F80FF]/90 transition-colors font-medium flex items-center gap-2"
+                    className="bg-[#2F80FF] text-white px-6 py-3 rounded-lg hover:bg-[#2F80FF]/90 transition-colors font-medium text-base flex items-center gap-2"
                   >
                     View Live Project
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
                   </a>
-                  <button className="border border-white/20 text-white px-6 py-3 rounded-lg hover:border-[#2F80FF] hover:text-[#2F80FF] transition-colors font-medium">
+                  <button className="border border-white/20 text-white px-6 py-3 rounded-lg hover:border-[#2F80FF] hover:text-[#2F80FF] transition-colors font-medium text-base">
                     Case Study
                   </button>
                 </div>

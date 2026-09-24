@@ -23,9 +23,9 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 md:py-32 bg-[#0D1B2A]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="mb-16">
+    <section id="services" className="py-20 md:py-28 bg-[#0D1B2A]">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             From idea → interface → working system.
           </h2>
@@ -35,7 +35,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#07111F] rounded-2xl border border-white/8 p-8 hover:border-[#2F80FF]/30 transition-all duration-300 group"
+              className="bg-[#07111F] rounded-xl border border-white/8 p-8 hover:border-[#2F80FF]/30 transition-all duration-300 group"
             >
               <div className="text-[#FF8A3D] text-5xl font-bold mb-4 group-hover:text-[#2F80FF] transition-colors">
                 {service.number}

@@ -16,19 +16,19 @@ export default function Technology() {
   ];
 
   return (
-    <section id="technology" className="py-24 md:py-32 bg-[#07111F]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="mb-16">
+    <section id="technology" className="py-20 md:py-28 bg-[#07111F]">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Tools I use to turn ideas into products.
           </h2>
         </div>
 
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-3">
           {technologies.map((tech, index) => (
             <div
               key={index}
-              className="bg-[#0D1B2A] border border-white/8 px-6 py-3 rounded-full text-[#94A3B8] hover:border-[#2F80FF]/30 hover:text-[#2F80FF] transition-all duration-300"
+              className="bg-[#0D1B2A] border border-white/8 px-5 py-2.5 rounded-full text-[#94A3B8] text-sm hover:border-[#2F80FF]/30 hover:text-[#2F80FF] transition-all duration-300"
             >
               {tech}
             </div>

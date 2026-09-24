@@ -52,27 +52,27 @@ export default function ContactForm() {
   if (isSubmitted) {
     return (
       <section id="contact" className="py-24 md:py-32 bg-[#07111F]">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <div className="bg-[#0D1B2A] rounded-2xl border border-white/8 p-8 md:p-12 text-center">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
+          <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-8 md:p-12 text-center">
             <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <h3 className="text-3xl font-bold text-white mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Project Request Received
             </h3>
-            <p className="text-[#94A3B8] mb-6 leading-relaxed">
+            <p className="text-[#94A3B8] mb-6 leading-relaxed text-base md:text-lg">
               Thanks for sharing your project details. I've received your request and will review the information before getting back to you.
             </p>
             <div className="bg-[#2F80FF]/10 border border-[#2F80FF]/30 rounded-lg p-4 mb-6">
-              <p className="text-[#2F80FF] font-medium">
+              <p className="text-[#2F80FF] font-medium text-base">
                 Expected response: Within 24 hours
               </p>
             </div>
             <a
               href="#"
-              className="inline-block bg-[#2F80FF] text-white px-8 py-3 rounded-lg hover:bg-[#2F80FF]/90 transition-colors font-medium"
+              className="inline-block bg-[#2F80FF] text-white px-8 py-3 rounded-lg hover:bg-[#2F80FF]/90 transition-colors font-medium text-base"
             >
               Back to Home
             </a>
@@ -84,13 +84,13 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="py-24 md:py-32 bg-[#07111F]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           <div className="space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
               Have something worth building?
             </h2>
-            <p className="text-xl text-[#94A3B8] leading-relaxed">
+            <p className="text-lg md:text-xl text-[#94A3B8] leading-relaxed">
               Tell me what you're working on. I'll help turn the idea into a practical digital product.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -115,7 +115,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <form onSubmit={handleSubmit} className="bg-[#0D1B2A] rounded-2xl border border-white/8 p-8 md:p-12">
+            <form onSubmit={handleSubmit} className="bg-[#0D1B2A] rounded-xl border border-white/8 p-8 md:p-12">
               {error && (
                 <div className="bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-3 rounded-lg mb-6">
                   {error}
