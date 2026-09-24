@@ -51,21 +51,21 @@ export default function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <section id="contact" className="py-20 md:py-24 bg-[#07111F]">
+      <section id="contact" className="py-16 md:py-20 bg-[#07111F]">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-          <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-8 md:p-12 text-center max-w-3xl mx-auto">
-            <div className="w-14 h-14 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-5">
+          <div className="bg-[#0D1B2A] rounded-xl border border-white/8 p-6 md:p-10 text-center max-w-3xl mx-auto">
+            <div className="w-14 h-14 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg className="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <h3 className="text-[clamp(28px,3.5vw,42px)] font-bold text-white leading-[1.15] mb-4">
+            <h3 className="text-[clamp(28px,3.5vw,42px)] font-bold text-white leading-[1.15] mb-3">
               Project Request Received
             </h3>
-            <p className="text-[#94A3B8] mb-5 leading-relaxed text-base">
+            <p className="text-[#94A3B8] mb-4 leading-relaxed text-base">
               Thanks for sharing your project details. I've received your request and will review the information before getting back to you.
             </p>
-            <div className="bg-[#2F80FF]/10 border border-[#2F80FF]/30 rounded-lg p-4 mb-5">
+            <div className="bg-[#2F80FF]/10 border border-[#2F80FF]/30 rounded-lg p-4 mb-4">
               <p className="text-[#2F80FF] font-medium text-sm">
                 Expected response: Within 24 hours
               </p>
@@ -83,10 +83,10 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-20 md:py-24 bg-[#07111F]">
+    <section id="contact" className="py-16 md:py-20 bg-[#07111F]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="space-y-6">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div className="space-y-5">
             <h2 className="text-[clamp(36px,4vw,52px)] font-bold text-white leading-[1.1]">
               Have something worth building?
             </h2>

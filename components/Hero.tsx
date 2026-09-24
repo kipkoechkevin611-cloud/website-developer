@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
-    <section id="home" className="min-h-[70vh] lg:min-h-[82vh] flex items-center pt-16 bg-[#07111F]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-16 md:py-20">
-        <div className="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-16 items-center">
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <p className="text-[#94A3B8] text-xs font-medium tracking-widest uppercase mb-4">
+    <section id="home" className="min-h-[70vh] lg:min-h-[80vh] flex items-center pt-16 bg-[#07111F]">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid lg:grid-cols-[55%_45%] gap-10 lg:gap-14 items-center">
+          <div className="space-y-5">
+            <div className="space-y-3">
+              <p className="text-[#94A3B8] text-xs font-medium tracking-widest uppercase">
                 FULL-STACK DEVELOPER • DIGITAL SOLUTIONS
               </p>
               <h1 className="text-[clamp(48px,6vw,82px)] font-bold text-white leading-[1.05]">

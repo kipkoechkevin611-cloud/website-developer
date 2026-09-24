@@ -28,9 +28,9 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="py-16 md:py-20 bg-[#07111F]">
+    <section id="process" className="py-14 md:py-16 bg-[#07111F]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="mb-10">
+        <div className="mb-8">
           <h2 className="text-[clamp(36px,4vw,52px)] font-bold text-white leading-[1.1] mb-3">
             How I Work
           </h2>
@@ -40,7 +40,7 @@ export default function Process() {
           <div className="relative flex items-center justify-between">
             <div className="absolute top-1/2 left-0 right-0 h-px bg-white/10 -translate-y-1/2"></div>
             {steps.map((step, index) => (
-              <div key={index} className="relative flex flex-col items-center gap-4">
+              <div key={index} className="relative flex flex-col items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-[#0D1B2A] border-2 border-[#2F80FF] flex items-center justify-center text-[#2F80FF] font-bold text-sm z-10">
                   {step.number}
                 </div>
@@ -53,7 +53,7 @@ export default function Process() {
           </div>
         </div>
 
-        <div className="lg:hidden space-y-6">
+        <div className="lg:hidden space-y-5">
           {steps.map((step, index) => (
             <div key={index} className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-full bg-[#0D1B2A] border-2 border-[#2F80FF] flex items-center justify-center text-[#2F80FF] font-bold text-xs flex-shrink-0">

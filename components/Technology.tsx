@@ -19,15 +19,15 @@ export default function Technology() {
   ];
 
   return (
-    <section id="technology" className="py-16 md:py-20 bg-[#07111F]">
+    <section id="technology" className="py-12 md:py-14 bg-[#07111F]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="mb-10">
+        <div className="mb-8">
           <h2 className="text-[clamp(36px,4vw,52px)] font-bold text-white leading-[1.1] mb-3">
             Built with modern technology.
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           {techCategories.map((category, index) => (
             <div key={index}>
               <h3 className="text-[#FF8A3D] text-xs font-medium tracking-widest uppercase mb-3">

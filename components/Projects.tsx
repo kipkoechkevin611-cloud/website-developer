@@ -24,10 +24,10 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 md:py-24 bg-[#07111F]">
+    <section id="projects" className="py-16 md:py-20 bg-[#07111F]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="mb-12">
-          <h2 className="text-[clamp(36px,4vw,52px)] font-bold text-white leading-[1.1] mb-4">
+        <div className="mb-10">
+          <h2 className="text-[clamp(36px,4vw,52px)] font-bold text-white leading-[1.1] mb-3">
             Selected Work
           </h2>
           <p className="text-base md:text-lg text-[#94A3B8] max-w-2xl leading-relaxed">
@@ -35,7 +35,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="space-y-20 md:space-y-24">
+        <div className="space-y-16 md:space-y-20">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -64,7 +64,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} space-y-4`}>
+              <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} space-y-3`}>
                 <div className="text-[#FF8A3D] text-xs font-medium tracking-widest uppercase">
                   0{index + 1} / {project.category}
                 </div>

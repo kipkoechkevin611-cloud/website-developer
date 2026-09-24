@@ -1,8 +1,8 @@
 export default function HeroTransition() {
   return (
-    <section className="py-12 md:py-16 bg-[#07111F] border-t border-white/8">
+    <section className="py-8 md:py-10 bg-[#07111F] border-t border-white/8">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="text-center space-y-3">
+        <div className="text-center space-y-2">
           <p className="text-[#94A3B8] text-sm font-medium tracking-widest uppercase">
             WEBSITES  •  E-COMMERCE  •  WEB APPS  •  APIs
           </p>

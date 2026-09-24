@@ -23,9 +23,9 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-16 md:py-20 bg-[#0D1B2A]">
+    <section id="services" className="py-14 md:py-16 bg-[#0D1B2A]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="mb-10">
+        <div className="mb-8">
           <h2 className="text-[clamp(36px,4vw,52px)] font-bold text-white leading-[1.1] mb-3">
             What I Build
           </h2>
@@ -34,7 +34,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-5">
+        <div className="grid md:grid-cols-2 gap-4">
           {services.map((service, index) => (
             <div
               key={index}
