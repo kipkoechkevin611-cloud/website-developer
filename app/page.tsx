@@ -1,10 +1,9 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import HeroTransition from '@/components/HeroTransition';
-import About from '@/components/About';
-import Services from '@/components/Services';
+import CapabilityStrip from '@/components/CapabilityStrip';
 import Projects from '@/components/Projects';
-import Technology from '@/components/Technology';
+import Services from '@/components/Services';
+import AboutTechnology from '@/components/AboutTechnology';
 import Process from '@/components/Process';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
@@ -31,11 +30,10 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <HeroTransition />
+      <CapabilityStrip />
       <Projects />
       <Services />
-      <Technology />
-      <About />
+      <AboutTechnology />
       <Process />
       <ContactForm />
       <Footer />

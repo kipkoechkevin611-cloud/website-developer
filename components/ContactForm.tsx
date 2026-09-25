@@ -85,15 +85,15 @@ export default function ContactForm() {
   return (
     <section id="contact" className="py-16 md:py-20 bg-[#07111F]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+        <div className="grid lg:grid-cols-[45%_55%] gap-8 md:gap-12 items-center">
           <div className="space-y-5">
-            <h2 className="text-[clamp(36px,4vw,52px)] font-bold text-white leading-[1.1]">
+            <h2 className="text-[clamp(40px,4vw,52px)] font-bold text-white leading-[1.1]">
               Have something worth building?
             </h2>
-            <p className="text-base md:text-lg text-[#94A3B8] leading-relaxed">
+            <p className="text-base md:text-lg text-[#94A3B8] leading-relaxed max-w-[480px]">
               Tell me what you're working on. Let's turn the idea into a practical digital product.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col gap-3 pt-2">
               <a
                 href="https://wa.me/254700000000"
                 target="_blank"

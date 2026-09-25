@@ -24,27 +24,22 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0D1B2A]/90 backdrop-blur-md border-b border-white/8'
-          : 'bg-transparent'
+          ? 'bg-[#0D1B2A]/95 backdrop-blur-md border-b border-white/8'
+          : 'bg-[#07111F]'
       }`}
     >
       <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex flex-col">
-            <a
-              href="#"
-              className="text-xl font-bold text-white hover:text-[#2F80FF] transition-colors"
-            >
-              Kevin
-            </a>
-            <span className="text-[#94A3B8] text-xs tracking-wide hidden sm:block">
-              Full-Stack Developer
-            </span>
-          </div>
+        <div className="flex justify-between items-center h-[72px] md:h-[72px]">
+          <a
+            href="#"
+            className="text-xl font-bold text-white hover:text-[#2F80FF] transition-colors"
+          >
+            Kevin
+          </a>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
