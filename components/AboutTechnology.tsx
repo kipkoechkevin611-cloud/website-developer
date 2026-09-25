@@ -24,7 +24,7 @@ export default function AboutTechnology() {
 
   return (
     <section id="about" className="py-24 md:py-32 bg-[#07111F]">
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[45%_55%] gap-8 md:gap-12 items-start">
           <div className="space-y-6">
             <div>

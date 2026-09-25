@@ -29,7 +29,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-24 md:py-32 bg-[#07111F]">
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-6 lg:px-8">
         <div className="flex items-start gap-4 md:gap-8 mb-12">
           <div className="text-[#FF8A3D] text-5xl md:text-6xl font-bold leading-none">01</div>
           <div className="flex-1">
