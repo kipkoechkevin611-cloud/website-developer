@@ -30,8 +30,8 @@ export default function Process() {
   return (
     <section id="process" className="py-24 md:py-32 bg-[#0D1B2A]">
       <div className="max-w-[1200px] mx-auto px-5 md:px-6 lg:px-8">
-        <div className="mb-8">
-          <h2 className="text-[clamp(40px,4vw,52px)] font-bold text-white leading-[1.1] mb-3">
+        <div className="mb-10">
+          <h2 className="text-[clamp(40px,4vw,52px)] font-bold text-white leading-[1.05] tracking-tight mb-4">
             How I Work
           </h2>
         </div>
@@ -42,12 +42,12 @@ export default function Process() {
             <div className="w-full flex items-center justify-between">
               {steps.map((step, index) => (
                 <div key={index} className="relative flex flex-col items-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-[#07111F] border-2 border-[#2F80FF] flex items-center justify-center text-[#2F80FF] font-bold text-sm z-10">
+                  <div className="w-10 h-10 rounded-full bg-[#07111F] border-2 border-[#2F80FF] flex items-center justify-center text-[#2F80FF] font-bold text-[13px] z-10">
                     {step.number}
                   </div>
                   <div className="text-center">
-                    <h3 className="text-white font-bold text-sm mb-1">{step.title}</h3>
-                    <p className="text-[#94A3B8] text-xs max-w-[120px]">{step.description}</p>
+                    <h3 className="text-white font-bold text-[13px] mb-1 tracking-tight">{step.title}</h3>
+                    <p className="text-[#94A3B8] text-[11px] max-w-[120px] leading-[1.4]">{step.description}</p>
                   </div>
                 </div>
               ))}
@@ -58,12 +58,12 @@ export default function Process() {
         <div className="lg:hidden space-y-4">
           {steps.map((step, index) => (
             <div key={index} className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-full bg-[#07111F] border-2 border-[#2F80FF] flex items-center justify-center text-[#2F80FF] font-bold text-xs flex-shrink-0">
+              <div className="w-10 h-10 rounded-full bg-[#07111F] border-2 border-[#2F80FF] flex items-center justify-center text-[#2F80FF] font-bold text-[13px] flex-shrink-0">
                 {step.number}
               </div>
               <div>
-                <h3 className="text-white font-bold text-base mb-1">{step.title}</h3>
-                <p className="text-[#94A3B8] text-sm">{step.description}</p>
+                <h3 className="text-white font-bold text-[15px] mb-1 tracking-tight">{step.title}</h3>
+                <p className="text-[#94A3B8] text-[13px] leading-[1.5]">{step.description}</p>
               </div>
             </div>
           ))}

@@ -30,13 +30,13 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 md:py-32 bg-[#07111F]">
       <div className="max-w-[1200px] mx-auto px-5 md:px-6 lg:px-8">
-        <div className="flex items-start gap-4 md:gap-8 mb-12">
-          <div className="text-[#FF8A3D] text-5xl md:text-6xl font-bold leading-none">01</div>
+        <div className="flex items-start gap-4 md:gap-8 mb-16">
+          <div className="text-[#FF8A3D] text-5xl md:text-6xl font-bold leading-none tracking-tight">01</div>
           <div className="flex-1">
-            <h2 className="text-[clamp(40px,4vw,52px)] font-bold text-white leading-[1.1] mb-3">
+            <h2 className="text-[clamp(40px,4vw,52px)] font-bold text-white leading-[1.05] tracking-tight mb-4">
               Selected Work
             </h2>
-            <p className="text-base md:text-lg text-[#94A3B8] max-w-2xl leading-relaxed">
+            <p className="text-[15px] text-[#94A3B8] max-w-2xl leading-[1.7]">
               Digital products built for real businesses.
             </p>
           </div>
@@ -50,23 +50,23 @@ export default function Projects() {
                 index % 2 === 1 ? 'lg:grid-cols-[65%_35%]' : ''
               }`}
             >
-              <div className={`${index % 2 === 1 ? 'lg:order-2' : ''} space-y-4`}>
-                <div className="text-[#FF8A3D] text-xs font-medium tracking-widest uppercase">
+              <div className={`${index % 2 === 1 ? 'lg:order-2' : ''} space-y-5`}>
+                <div className="text-[#FF8A3D] text-[11px] font-medium tracking-[0.2em] uppercase">
                   {project.category}
                 </div>
-                <h3 className="text-[clamp(28px,3.5vw,42px)] font-bold text-white leading-[1.15]">
+                <h3 className="text-[clamp(28px,3.5vw,42px)] font-bold text-white leading-[1.1] tracking-tight">
                   {project.name}
                 </h3>
                 {project.businessContext && (
-                  <p className="text-sm text-[#94A3B8] leading-relaxed italic">
+                  <p className="text-[13px] text-[#94A3B8] leading-[1.6] italic">
                     {project.businessContext}
                   </p>
                 )}
-                <p className="text-base text-[#94A3B8] leading-relaxed">
+                <p className="text-[15px] text-[#94A3B8] leading-[1.7]">
                   {project.description}
                 </p>
                 {project.note && (
-                  <p className="text-xs text-[#94A3B8]/70">
+                  <p className="text-[12px] text-[#94A3B8]/60">
                     {project.note}
                   </p>
                 )}
@@ -75,19 +75,19 @@ export default function Projects() {
                   {project.technology.map((tech, i) => (
                     <span
                       key={i}
-                      className="bg-white/5 border border-white/10 text-[#94A3B8] px-3 py-1 rounded-full text-xs font-medium hover:border-[#2F80FF]/40 hover:text-[#2F80FF] transition-colors"
+                      className="bg-white/5 border border-white/10 text-[#94A3B8] px-3 py-1 rounded-full text-[11px] font-medium hover:border-[#2F80FF]/50 hover:text-[#2F80FF] transition-all duration-300"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex gap-3 pt-2">
+                <div className="flex gap-3 pt-1">
                   <a
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#2F80FF] text-white px-5 py-2.5 rounded-lg hover:bg-[#2F80FF]/90 transition-all hover:translate-y-[-2px] font-medium text-sm flex items-center gap-2"
+                    className="bg-[#2F80FF] text-white px-5 py-2.5 rounded-lg hover:bg-[#2F80FF]/95 transition-all duration-300 hover:translate-y-[-1px] font-medium text-[13px] flex items-center gap-2"
                   >
                     Visit Project →
                   </a>
@@ -95,9 +95,9 @@ export default function Projects() {
               </div>
 
               <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                <div className="bg-[#0D1B2A] rounded-xl border border-white/8 aspect-video flex items-center justify-center hover:border-[#2F80FF]/40 transition-all duration-300 group hover:scale-[1.01]">
+                <div className="bg-[#0D1B2A] rounded-xl border border-white/8 aspect-video flex items-center justify-center hover:border-[#2F80FF]/50 transition-all duration-300 group hover:scale-[1.005]">
                   <div className="text-center w-full p-6">
-                    <div className="text-[#94A3B8] text-xs mb-4">{project.url.replace('https://', '').replace('/?utm_source=chatgpt.com', '')}</div>
+                    <div className="text-[#94A3B8] text-[11px] mb-4 font-medium tracking-wide">{project.url.replace('https://', '').replace('/?utm_source=chatgpt.com', '')}</div>
                     <div className="bg-white/5 rounded-lg p-6 max-w-lg mx-auto">
                       <div className="flex items-center gap-2 mb-4">
                         <div className="w-3 h-3 rounded-full bg-red-500"></div>

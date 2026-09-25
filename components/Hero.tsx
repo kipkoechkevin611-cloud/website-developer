@@ -6,15 +6,15 @@ export default function Hero() {
       <div className="max-w-[1200px] mx-auto px-5 md:px-6 lg:px-8 py-12">
         <div className="grid lg:grid-cols-[52%_48%] gap-8 lg:gap-12 items-center">
           <div className="space-y-4">
-            <div className="space-y-3">
-              <p className="text-[#94A3B8] text-xs font-medium tracking-widest uppercase">
+            <div className="space-y-4">
+              <p className="text-[#94A3B8] text-xs font-medium tracking-[0.2em] uppercase">
                 FULL-STACK DEVELOPMENT · KENYA
               </p>
-              <h1 className="text-[clamp(48px,5vw,76px)] font-bold text-white leading-[1.0]">
+              <h1 className="text-[clamp(48px,5vw,76px)] font-bold text-white leading-[1.05] tracking-tight">
                 I build digital products<br />
                 that mean business.
               </h1>
-              <p className="text-base text-[#94A3B8] leading-[1.6] max-w-[480px]">
+              <p className="text-[15px] text-[#94A3B8] leading-[1.7] max-w-[480px]">
                 I design and develop fast, responsive websites, e-commerce platforms and custom web applications that help businesses operate, sell and grow online.
               </p>
             </div>
@@ -22,7 +22,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <a
                 href="#contact"
-                className="bg-[#2F80FF] text-white px-6 py-3 rounded-lg hover:bg-[#2F80FF]/90 transition-all hover:translate-y-[-2px] font-medium text-base flex items-center justify-center gap-2"
+                className="bg-[#2F80FF] text-white px-6 py-3 rounded-lg hover:bg-[#2F80FF]/95 transition-all duration-300 hover:translate-y-[-1px] font-medium text-[15px] flex items-center justify-center gap-2"
               >
                 Start a Project
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,13 +31,13 @@ export default function Hero() {
               </a>
               <a
                 href="#projects"
-                className="border border-white/20 text-white px-6 py-3 rounded-lg hover:border-[#2F80FF] hover:text-[#2F80FF] transition-all hover:translate-y-[-2px] font-medium text-base"
+                className="border border-white/15 text-white px-6 py-3 rounded-lg hover:border-[#2F80FF]/60 hover:text-[#2F80FF] transition-all duration-300 hover:translate-y-[-1px] font-medium text-[15px]"
               >
                 View Work
               </a>
             </div>
 
-            <div className="flex items-center gap-2 text-[#94A3B8] text-sm pt-1">
+            <div className="flex items-center gap-2 text-[#94A3B8] text-[13px] pt-3">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               Available for selected projects
             </div>
