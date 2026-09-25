@@ -1,31 +1,35 @@
 export default function Projects() {
   const projects = [
     {
-      category: 'E-COMMERCE',
+      category: 'E-COMMERCE CONCEPT',
       name: 'TopTank Kenya',
-      description: 'E-commerce experience for water storage solutions, combining product discovery, ordering and customer conversion.',
+      businessContext: 'E-commerce platform concept for water storage solutions, focusing on product discovery and customer conversion workflows.',
+      description: 'Built a responsive e-commerce experience with product catalog, ordering system, and customer conversion paths.',
       technology: ['Next.js', 'React', 'E-commerce', 'API'],
       url: 'https://www.toptankkenya.co.ke/?utm_source=chatgpt.com',
+      note: 'Design concept and technical implementation',
     },
     {
       category: 'BUSINESS TECHNOLOGY',
       name: 'Majesty Compucare',
-      description: 'Business technology and e-commerce website for computer and technology solutions with product catalog and ordering system.',
+      businessContext: 'ICT retailer and technology service provider serving customers from Nakuru and Kisumu.',
+      description: 'Business website and product platform with product catalog, commercial offers, services, and WhatsApp conversion paths.',
       technology: ['Next.js', 'React', 'API', 'Database'],
       url: 'https://www.majestycompucarelimited.com/?utm_source=chatgpt.com',
     },
     {
       category: 'SERVICE PLATFORM',
       name: 'Career Account Support',
-      description: 'Professional business and service platform for career support services with booking system and dashboard.',
+      businessContext: 'Professional platform for career support services.',
+      description: 'Business and service platform with booking system, dashboard, and customer management workflows.',
       technology: ['Next.js', 'React', 'Supabase', 'API'],
       url: 'https://www.careeraccountsupport.com/?utm_source=chatgpt.com',
     },
   ];
 
   return (
-    <section id="projects" className="py-20 md:py-24 bg-[#07111F]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <section id="projects" className="py-24 md:py-32 bg-[#07111F]">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <div className="flex items-start gap-4 md:gap-8 mb-12">
           <div className="text-[#FF8A3D] text-5xl md:text-6xl font-bold leading-none">01</div>
           <div className="flex-1">
@@ -38,7 +42,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="space-y-16 md:space-y-20">
+        <div className="space-y-20 md:space-y-24">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -53,9 +57,19 @@ export default function Projects() {
                 <h3 className="text-[clamp(28px,3.5vw,42px)] font-bold text-white leading-[1.15]">
                   {project.name}
                 </h3>
+                {project.businessContext && (
+                  <p className="text-sm text-[#94A3B8] leading-relaxed italic">
+                    {project.businessContext}
+                  </p>
+                )}
                 <p className="text-base text-[#94A3B8] leading-relaxed">
                   {project.description}
                 </p>
+                {project.note && (
+                  <p className="text-xs text-[#94A3B8]/70">
+                    {project.note}
+                  </p>
+                )}
 
                 <div className="flex flex-wrap gap-2">
                   {project.technology.map((tech, i) => (
@@ -75,7 +89,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="bg-[#2F80FF] text-white px-5 py-2.5 rounded-lg hover:bg-[#2F80FF]/90 transition-all hover:translate-y-[-2px] font-medium text-sm flex items-center gap-2"
                   >
-                    View Project →
+                    Visit Project →
                   </a>
                 </div>
               </div>

@@ -30,7 +30,7 @@ export default function Navbar() {
           : 'bg-[#07111F]'
       }`}
     >
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-[72px] md:h-[72px]">
           <a
             href="#"

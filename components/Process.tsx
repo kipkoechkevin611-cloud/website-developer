@@ -28,8 +28,8 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="py-16 md:py-20 bg-[#0D1B2A]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <section id="process" className="py-24 md:py-32 bg-[#0D1B2A]">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="text-[clamp(40px,4vw,52px)] font-bold text-white leading-[1.1] mb-3">
             How I Work

@@ -83,8 +83,8 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-20 bg-[#07111F]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <section id="contact" className="py-24 md:py-32 bg-[#07111F]">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-[45%_55%] gap-8 md:gap-12 items-center">
           <div className="space-y-5">
             <h2 className="text-[clamp(40px,4vw,52px)] font-bold text-white leading-[1.1]">

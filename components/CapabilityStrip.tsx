@@ -9,7 +9,7 @@ export default function CapabilityStrip() {
 
   return (
     <section className="h-[70px] md:h-[80px] bg-[#0D1B2A] border-y border-white/8 flex items-center">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8 w-full">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between gap-4 md:gap-8">
           {capabilities.map((capability, index) => (
             <div key={index} className="flex items-center gap-2 md:gap-3">

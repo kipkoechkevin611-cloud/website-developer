@@ -3,15 +3,12 @@ export default function Hero() {
     <section id="home" className="min-h-[650px] lg:min-h-[720px] flex items-center pt-[72px] bg-[#07111F] relative overflow-hidden">
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-[#2F80FF]/5 rounded-full blur-[120px] pointer-events-none"></div>
       
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8 py-12">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8 py-12">
         <div className="grid lg:grid-cols-[52%_48%] gap-8 lg:gap-12 items-center">
           <div className="space-y-4">
             <div className="space-y-3">
               <p className="text-[#94A3B8] text-xs font-medium tracking-widest uppercase">
-                FULL-STACK DEVELOPER
-              </p>
-              <p className="text-[#94A3B8] text-xs font-medium tracking-widest uppercase">
-                DIGITAL SOLUTIONS
+                FULL-STACK DEVELOPMENT · KENYA
               </p>
               <h1 className="text-[clamp(48px,5vw,76px)] font-bold text-white leading-[1.0]">
                 I build digital products<br />

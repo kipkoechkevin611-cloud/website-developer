@@ -2,25 +2,29 @@ export default function AboutTechnology() {
   const techCategories = [
     {
       category: 'FRONTEND',
+      description: 'React, Next.js, TypeScript, responsive interfaces',
       items: ['Next.js', 'React', 'TypeScript', 'JavaScript', 'Tailwind CSS'],
     },
     {
-      category: 'BACKEND',
+      category: 'BACKEND & SYSTEMS',
+      description: 'Node, Python, databases, authentication, APIs',
       items: ['Node.js', 'PHP', 'Python', 'APIs'],
     },
     {
-      category: 'DATABASE',
+      category: 'COMMERCE & INTEGRATIONS',
+      description: 'Payments, external APIs, automation',
       items: ['MongoDB', 'PostgreSQL', 'MySQL', 'Supabase'],
     },
     {
-      category: 'INFRASTRUCTURE',
+      category: 'DEPLOYMENT & SUPPORT',
+      description: 'Hosting, optimization, maintenance',
       items: ['GitHub', 'Vercel', 'Docker', 'AWS/Azure'],
     },
   ];
 
   return (
-    <section id="about" className="py-16 md:py-20 bg-[#07111F]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <section id="about" className="py-24 md:py-32 bg-[#07111F]">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-[45%_55%] gap-8 md:gap-12 items-start">
           <div className="space-y-6">
             <div>
@@ -43,14 +47,17 @@ export default function AboutTechnology() {
 
           <div>
             <h3 className="text-[#FF8A3D] text-xs font-medium tracking-widest uppercase mb-4">
-              TECHNOLOGY
+              TECHNICAL CAPABILITIES
             </h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-4">
               {techCategories.map((category, index) => (
                 <div key={index} className="space-y-2">
                   <h4 className="text-white text-sm font-medium">
                     {category.category}
                   </h4>
+                  <p className="text-xs text-[#94A3B8]">
+                    {category.description}
+                  </p>
                   <div className="flex flex-wrap gap-1.5">
                     {category.items.map((tech, i) => (
                       <span

@@ -23,8 +23,8 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-16 md:py-20 bg-[#0D1B2A]">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <section id="services" className="py-24 md:py-32 bg-[#0D1B2A]">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-[35%_65%] gap-8 md:gap-12">
           <div>
             <h2 className="text-[clamp(40px,4vw,52px)] font-bold text-white leading-[1.1] mb-3">

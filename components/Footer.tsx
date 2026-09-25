@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#07111F] border-t border-white/8 py-10">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <h3 className="text-lg font-bold text-white">Kevin</h3>
